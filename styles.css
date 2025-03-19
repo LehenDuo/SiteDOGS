@@ -1,0 +1,17 @@
+#wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+#olar {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 883px;
+    width: 1440px;
+    background-image: url("img/cachorroMain.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1440px 883px;
+    font-weight: bold;
+}
