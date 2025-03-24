@@ -2,15 +2,484 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Paws n' Play</title>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
     </head>
+    
     <body>
-        <div id="wrapper">
-            <div id="olar">
-            
+        <section class="wrapper background">
+            <header class="paddingHeader">
+                <div class="displayInlineFlex">
+                    <div class="headerSize displayInlineFlex gap100">
+                        <div class="cellHeader">
+                            <a href="#">
+                                <img id="logo" src="img/patinhasWhite.png">
+                                <div height="32px" id="logoText" class="font fontLogo displayInlineFlex">Paws n' Play</div>
+                            </a>
+                        </div>
+                        <div class="hideCell gap20 displayInlineFlex">
+                            <div>
+                                <a class="shopServ font fontLogo2" href="#">Shop</a>
+                                <img class="logo" src="img/arrowD.png">
+                            </div>
+                            <div>
+                                <a class="shopServ font fontLogo2" href="#">Services</a>
+                                <img class="logo" src="img/arrowD.png">
+                            </div>
+                            <div><a class="headerText font fontLogo2" href="#">About Us</a></div>
+                            <div><a class="headerText font fontLogo2" href="#">Blog</a></div>
+                            <div><a class="headerText font fontLogo2" href="#">Contact</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="getStarted" class="hideCell">
+                    <div><a class="headerText font fontBlack" href="#">Get Started</a></div>
+                </div>
+            </header>
+
+            <section>
+                <div>
+                    <div class="heroContainer">
+                        <p class="heroMain font">Pawsitively Perfect: Where Every Pet's Dream Comes True!</p>
+                        <p class="heroSub font">Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services. From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"</p>
+                    </div>
+                    <div id="shopButton">
+                        <a class="displayInlineBlock headerText font fontBlack" href="#">
+                            <p id="shopB" class="displayInlineFlex font heroShop">Shop Now</p>
+                            <img id="logo2" class="displayInlineFlex" src="img/patinhasWhite.png">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="font wrapper">
+            <div class="shopContainer">
+                <div class="marginBottom underlineGray">
+                    <h2 class="displayInlineBlock">
+                        <img id="logo3" class="displayInlineBlock" src="img/patinhas.png" /> 
+                        <p class="displayInlineBlock">Shop</p>
+                    </h2>
+                </div>
+
+                <div class="featuredProducts marginBottom">
+                    <div >
+                        <h1 class="displayInlineBlock">Featured Products</h1>
+                        <input type="text" class="searchBox displayInlineBlock" placeholder="Search">
+                    </div>
+                    <div class="filterBar">
+                        <button class="fontLogo fontBlack btn">Random</button>
+                        <button class="fontLogo fontBlack btn">Cat</button>
+                        <button class="fontLogo fontBlack btn">Dogs</button>
+                        <button class="fontLogo fontBlack btn">Fish</button>
+                        <button class="fontLogo fontBlack btn">Birds</button>
+                    </div>
+                    <div class="products">
+                            <div class="imageHolder featDisplay">
+                                <img src="img/racaoGato.png" alt="Cat Food">
+                                <div>
+                                    <p class="font fontBlack fontIH1">₦15,000.00</p>
+                                    <p class="font fontBlack fontIH2 fontSize30">Multivitamin for Cat</p>
+                                    <p class="font fontBlack fontIH3">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+                                    <span class="justify">
+                                        <span id="qtySelector">
+                                            <p class="font fontBlack inline">+</p>
+                                            <p class="font fontBlack inline">1</p>
+                                            <p id="minusSign" class="font fontBlack inline">-</p>
+                                        </span>
+                                        <span>
+                                            <p class="font fontBlack inline">Add to Cart</p>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="imageBack"></div>
+                            </div>
+                            <div class="imageHolder featDisplay">
+                                <img src="img/racaogato2.png" alt="Dog Box">
+                                <div>
+                                    <p class="font fontBlack fontIH1">₦15,000.00</p>
+                                    <p class="font fontBlack fontIH2 fontSize30">Multivitamin for Cat</p>
+                                    <p class="font fontBlack fontIH3">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+                                    <span class="justify">
+                                        <span id="qtySelector">
+                                            <p class="font fontBlack inline">+</p>
+                                            <p class="font fontBlack inline">1</p>
+                                            <p id="minusSign" class="font fontBlack inline">-</p>
+                                        </span>
+                                        <span>
+                                            <p class="font fontBlack inline">Add to Cart</p>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="imageBack"></div>
+                            </div>
+                            <div class="imageHolder featDisplay">
+                                <img src="img/racaoCachorro.png" alt="Dog Food">
+                                <div>
+                                    <p class="font fontBlack fontIH1">₦15,000.00</p>
+                                    <p class="font fontBlack fontIH2 fontSize30">Multivitamin for Cat</p>
+                                    <p class="font fontBlack fontIH3">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+                                    <span class="justify">
+                                        <span id="qtySelector">
+                                            <p class="font fontBlack inline">+</p>
+                                            <p class="font fontBlack inline">1</p>
+                                            <p id="minusSign" class="font fontBlack inline">-</p>
+                                        </span>
+                                        <span>
+                                            <p class="font fontBlack inline">Add to Cart</p>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="imageBack"></div>
+                            </div>
+                    </div>
+                        <a href="#" class="fontBlack viewMore">View More >>></a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="font wrapper">
+            <div class="shopContainer">
+                <div class="marginBottom underlineGray">
+                    <h2 class="displayInlineBlock">
+                        <img id="logo3" class="displayInlineBlock" src="img/patinhas.png" /> 
+                        <p class="displayInlineBlock">Services</p>
+                    </h2>
+                </div>
+
+                <div class="justify2">
+                    <div class="grayBox services">
+                        <div class="gridItem">
+                            <a href="#">
+                                <p class="font fontLogo fontServices serviceText">Grooming</p>
+                            </a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="#">
+                                <p class="font fontLogo fontServices serviceText">Boarding</p>
+                            </a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="#">
+                                <p class="font fontLogo fontServices serviceText">Adoption</p>
+                            </a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="#">
+                                <p class="font fontLogo fontServices serviceText">Veterinary</p>
+                            </a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="#">
+                                <p class="font fontLogo fontServices serviceText">Training</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="font wrapper">
+            <div class="shopContainer">
+                <div class="marginBottom underlineGray">
+                    <h2 class="displayInlineBlock">
+                        <img id="logo3" class="displayInlineBlock" src="img/patinhas.png" /> 
+                        <p class="displayInlineBlock">About Us</p>
+                    </h2>
+                </div>
+
+                <div class="justify2">
+                    <div class="grayBox2 font">
+                        <div class="AUText">
+                            <p>&nbsp;&nbsp;&nbsp;At Paws n’ Play, our journey began with a simple yet profound love for animals. Inspired by the unwavering companionship and joy they bring to our lives, we embarked on a mission to create a haven where pets and their owners alike could experience unparalleled happiness and care.</p>
+                            <p>&nbsp;&nbsp;&nbsp;Driven by our passion for animal welfare, we hand-select each product and service with meticulous attention to quality and sustainability. From nutritious food and enriching toys to expert grooming and healthcare, every offering is carefully curated to meet the unique needs of our beloved furry friends.</p>
+                            <p>&nbsp;&nbsp;&nbsp;But our commitment doesn't end there. We're dedicated to fostering a community that celebrates the bond between pets and their human companions. Through educational resources, compassionate support, and memorable experiences, we strive to empower pet owners to provide the best possible care for their furry family members.</p>
+                            <p>&nbsp;&nbsp;&nbsp;At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding principle. We go above and beyond to ensure every interaction leaves tails wagging and hearts smiling. From personalized recommendations to attentive service, we're here to make your journey with your pet as joyful and fulfilling as possible.</p>
+                            <p>&nbsp;&nbsp;&nbsp;Join us in our mission to create a world where every pet is cherished, every need is met, and every tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no bounds.</p>
+                        </div>
+                        <div class="AUImage"><img src="img/AboutUs.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="font wrapper">
+            <div class="correctMargin">
+                <div class="marginBottom underlineGray">
+                    <h2 class="displayInlineBlock">
+                        <img id="logo3" class="displayInlineBlock" src="img/patinhas.png" /> 
+                        <p class="displayInlineBlock">Our Team</p>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="justify2">
+                <div class="grayBox3 font gap20">
+                    <div class="teamMember">
+                        <img class="teamImg" src="img/Olivia.jpg">
+                        <p class="fontOTName">Dr. Olivia Rhye</p>
+                        <p class="fontOTSub">Senior Veterinarian</p>
+                        <div>
+                            <a href="#">
+                                <img class="icon" src="img/X.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/linkedin.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/bola.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="teamMember">
+                        <img class="teamImg teamTwo" src="img/PhoenixBaker.jpg">
+                        <p class="fontOTName">Phoenix Baker</p>
+                        <p class="fontOTSub">Assist. Veterinarian</p>
+                        <div>
+                            <a href="#">
+                                <img class="icon" src="img/X.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/linkedin.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/bola.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="teamMember">
+                        <img class="teamImg" src="img/LanaSteiner.jpg">
+                        <p class="fontOTName">Lana Steiner</p>
+                        <p class="fontOTSub">Resident Veterinarian</p>
+                        <div>
+                            <a href="#">
+                                <img class="icon" src="img/X.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/linkedin.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/bola.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="teamMember">
+                        <img class="teamImg teamFour" src="img/Demi.jpg">
+                        <p class="fontOTName">Demi Wilkinson</p>
+                        <p class="fontOTSub">Intern Veterinarian</p>
+                        <div>
+                            <a href="#">
+                                <img class="icon" src="img/X.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/linkedin.png">
+                            </a>
+                            <a href="#">
+                                <img class="icon" src="img/bola.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper font">
+            <div class="correctMargin">
+                <div class="marginBottom underlineGray">
+                    <h2 class="displayInlineBlock">
+                        <img id="logo3" class="displayInlineBlock" src="img/patinhas.png" /> 
+                        <p class="displayInlineBlock">Blog</p>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="justify4">
+                <div class="blog">
+                    <div class="blogPart">
+                        <p class="blogTitle">Milestone: 20,000 Pets Treated</p>
+                        <p class="blogParagraph">&nbsp;&nbsp;&nbsp;Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+                        <p class="blogTitle2">Renewed target</p>
+                        <p class="blogParagraph2">&nbsp;&nbsp;&nbsp;Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac.</p>
+                        <div class="readMore">
+                            <a href="">
+                                <p class="ButtonRM">Read More</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="blogPart2" src="img/blog.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper font fontWhite dbbackgroundSpecial">
+            <div class="correctMargin">
+                <div class="marginBottom underlineGray">
+                    <h2 class="displayInlineBlock">
+                        <img id="logo3" class="displayInlineBlock" src="img/patinhasWhite.png" /> 
+                        <p class="displayInlineBlock">Get in Touch</p>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="contactGrid">
+                <div class="cgItem">
+                    <div class="formContainer">
+                        <div class="grid1x2">
+                            <div class="gridPart2">
+                                <label class="gridPart" for="firstN-nme">First name</label>
+                                <input class="formWidth gridPart" type="text" id="first-name" placeholder="First name">
+                            </div>
+
+                            <div class="gridPart2">
+                                <label class="gridPart" for="last-name">Last name</label>
+                                <input class="formWidth gridPart" type="text" id="last-name" placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <div class="gridPart2">
+                            <label class="gridPart" for="email">Email</label>
+                            <input class="formWidth gridPart" type="email" id="email" placeholder="you@company.com">
+                        </div>
+                        
+                        <div class="gridPart2">
+                            <label class="gridPart" for="message">Message</label>
+                            <textarea class="formWidth gridPart" id="message" rows="4" placeholder="Your message..."></textarea>
+                        </div>
+
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">You agree to our friendly <a href="#" class="privPolice">privacy policy</a>.</label>
+                        </div>
+                        
+                        <button class="formButton fontGray" type="submit">Send message</button>
+                    </div>
+                </div>
+                <div class="contactGrid2">
+                    <div class="cgItem">
+                        <img class="icon" src="img/email.png">
+                        <div class="textContact">
+                            <p class="textContactInner">Email</p>
+                            <p class="fontGray textContactInner">Our friendly team is here to help!</p>
+                            <p class="textContactInner">hello@pawnsplay.com</p>
+                        </div>
+                    </div>
+                    <div class="cgItem">
+                        <img class="icon" src="img/batePapo.png">
+                        <div class="textContact">
+                            <p class="textContactInner">Live Chat</p>
+                            <p class="fontGray textContactInner">Our friendly team is here to help!</p>
+                            <p class="textContactInner">Start new chat</p>
+                        </div>
+                    </div>
+                    <div class="cgItem">
+                        <img class="icon" src="img/local.png">
+                        <div class="textContact">
+                            <p class="textContactInner">Office</p>
+                            <p class="fontGray textContactInner">Come say hello at our office HQ.</p>
+                            <p class="textContactInner">123, Yaya Abatan st. Ogba Lagos.</p>
+                        </div>
+                    </div>
+                    <div class="cgItem">
+                        <img class="icon" src="img/phone.png">
+                        <div class="textContact">
+                            <p class="textContactInner">Phone</p>
+                            <p class="fontGray textContactInner">Mon-Fri from 8am to 5pm</p>
+                            <p class="textContactInner">+234 901234 384</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+            <div class="separator"></div>
+
+            <div class="joinUs">
+                <div class="JU1">
+                    <div>Join our newsletter</div>
+                    <div class="fontGray">Be the first to receive latest updates on promo, sales and offers</div>
+                </div>
+                <div class="JU2">
+                    <input type="email" class="emailInput" placeholder="Enter your email">
+                    <button class="subscribeButton">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+            <div class="separator"></div>
+            
+            <div class="GIT3 contactGrid4">
+                <div class="cgItem footerPaws">
+                    <img id="logo" src="img/patinhasWhite.png">
+                    <div height="32px" id="logoText" class="font fontLogo displayInlineFlex">Paws n' Play</div>
+
+                    <p class="fontGray">Where wagging tails and purring hearts reign supreme!</p>
+                </div>
+            
+                <div class="cgItemSpecial contactGrid3">
+                    <div class="cgItem">
+                        <div>Shop</div>
+                        <div class="fontGray">Pet Adoption</div>
+                        <div class="fontGray">Nutrition</div>
+                        <div class="fontGray">Pet Care</div>
+                        <div class="fontGray">Pet Food</div>
+                        <div class="fontGray">Pricing</div>
+                    </div>
+                    <div class="cgItem">
+                        <div>Company</div>
+                        <div class="fontGray">About Us</div>
+                        <div class="fontGray">Careers</div>
+                        <div class="fontGray">Press</div>
+                        <div class="fontGray">News</div>
+                        <div class="fontGray">Contact</div>
+                    </div>
+                    <div class="cgItem">
+                        <div>Services</div>
+                        <div class="fontGray">Grooming</div>
+                        <div class="fontGray">Boarding</div>
+                        <div class="fontGray">Training</div>
+                        <div class="fontGray">Veterinary</div>
+                        <div class="fontGray">Support</div>
+                    </div>
+                    <div class="cgItem">
+                        <div>Social</div>
+                        <div class="fontGray">Twitter</div>
+                        <div class="fontGray">LinkedIn</div>
+                        <div class="fontGray">Facebook</div>
+                        <div class="fontGray">AngelList</div>
+                        <div class="fontGray">Dribble</div>
+                    </div>
+                    <div class="cgItem">
+                        <div>Legal</div>
+                        <div class="fontGray">Terms</div>
+                        <div class="fontGray">Privacy</div>
+                        <div class="fontGray">Cookies</div>
+                        <div class="fontGray">Licenses</div>
+                        <div class="fontGray">Settings</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footBig">
+                <div class="footer">
+                    <p>© 2024 Paws n’ Play. All rights reserved.</p>
+                </div>
+                <div class="footer2">
+                    <img class="icon" src="img/XWhite.png">
+                    <img class="icon" src="img/linkedinWhite.png">
+                    <img class="icon" src="img/facebookWhite.png">
+                    <img class="icon" src="img/githubWhite.png">
+                    <img class="icon" src="img/paz.png">
+                    <img class="icon" src="img/bolaWhite.png">
+                </div>
+            </div>
+        </section>
     </body>
 </html>

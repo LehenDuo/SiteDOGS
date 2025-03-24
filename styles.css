@@ -1,17 +1,806 @@
-#wrapper {
-    width: 1440px;
-    margin: 0 auto;
-}
+@media screen {
 
-#olar {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    height: 883px;
-    width: 1440px;
-    background-image: url("img/cachorroMain.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1440px 883px;
-    font-weight: bold;
+    * {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    @font-face {
+        font-family: font;
+        src: url(Formative.otf);
+    }
+
+    .displayInlineFlex{
+        display: inline-flex;
+    }
+
+    .displayInlineBlock{
+        display: inline-block;
+    }
+
+    .gap100{
+        gap: 100px
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .gap20{
+        gap: 20px;
+    }
+
+    .font{
+        font-family: font;
+    }
+
+    .fontLogo{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        white-space: nowrap;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .fontLogo2{
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        white-space: nowrap;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .background {
+        min-width: 100%;
+        background-image: url(img/cachorroMain.png);
+        background-size: 120%;
+        background-repeat: no-repeat; 
+        background-position-y: -20px;
+        min-height: 800px;
+        overflow-y: hidden;
+        background-clip: content-box;
+    }
+
+    #logo{
+        margin-left: 30px;
+        height: 32px;
+    }
+
+    #logoText{
+        position: relative;
+        top: -6px;
+    }
+
+    .logo{
+        height: 32px;
+    }
+
+    .shopServ{
+        position: relative;
+        top: -9px;
+    }
+
+    .fontBlack{
+        color:black;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        white-space: nowrap;
+        text-shadow: 2px 2px 4px white;
+    }
+
+    #getStarted {
+        float: right;
+        margin-right: 30px;
+        background-color: white;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 15px;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .headerText{
+        position: relative;
+        top: 5px;
+    }
+
+    .paddingHeader{
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .heroMain{
+        color: white;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-left: 20px;
+        letter-spacing: 2%;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .heroSub{
+        color: white;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .heroShop{
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .headerSize {
+        min-width: 800px;
+    }
+
+    .heroContainer{
+        margin-top: 100px;
+        padding-left: 30px;
+        max-width: 600px;
+        min-width: 600px;
+    }
+
+    .wrapper{
+        max-width: 1440px;
+        min-width: 1440px;
+        margin: 0 auto;
+    }
+
+    #shopButton{
+        margin-left: 200px;
+        margin-top: 30px;
+        padding-top: 11px;
+        padding-bottom: 18px;
+        padding-left: 25px;
+        background-color: transparent;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;;
+        border-radius: 20px;
+        font: bold;
+        width: 160px;
+    }
+
+    #logo2{
+        position: relative;
+        top: -5px;
+        margin-left: 10px;
+        padding-right: 20px;
+        height: 32px;
+    }
+
+    #shopB{
+        position: relative;
+        top: -12px;
+    }
+
+    .shopContainer{
+        padding-top: 20px;
+        min-width: 95%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .underlineGray{
+        border-bottom: 1px solid lightgray;
+        margin: 0px 15px;
+    }
+
+    .titles{
+        font-size: 40px;
+    }
+
+    #logo3{
+        margin-left: 15px;
+        height: 32px;
+    }
+
+    .featuredProducts{
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        border-radius: 5px;
+        min-width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 13px;
+        padding-bottom: 15px;
+    }
+
+    .marginBottom {
+        margin-bottom: 20px;
+    }
+
+    .searchBox {
+        position: relative;
+        float: right;
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .filterBar {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .filterBar button {
+        background: transparent;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:focus {
+        background: #0e2946;
+        color: white;
+    }
+
+    .viewMore {
+        font-size: 20px;
+        font-weight: bold;
+        float: right;
+        position: relative;
+        top: -20px;
+    }
+
+    .products{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .featDisplay {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .featDisplay img{
+        width: 100%;
+    }
+
+    .fontBlack{
+        color: black;
+    }
+
+    .imageHolder{
+        position: relative;
+    }
+
+    .imageHolder:hover img{
+        opacity: 30%;
+    }
+
+    .imageHolder div{
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        z-index: -1;
+    }
+
+    .fontIH1 {
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+
+    .fontIH2 {
+        width: 90%;
+        white-space: wrap;
+        word-wrap: break-word;
+        font-size: 20px;
+        margin-top: 20px;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .fontIH3 {
+        width: 90%;
+        white-space: wrap;
+        word-wrap: break-word;
+        font-size: 20px;
+        margin-top: 20px;
+        justify-items: center;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    .fontSize30{
+        font-size: 30px;
+    }
+
+    .inline {
+        display: inline;
+        align-content: center;
+    }
+
+    #minusSign{
+        position: relative;
+        top: -2px;
+        margin-right: 30px
+    }
+
+    .justify{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 20px;
+    }
+
+    .services{
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gridItem {
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+
+    .gridItem:nth-child(1) {
+        background-image: url("img/Grooming.png");
+        background-size: cover;
+        grid-column: span 1;
+        grid-row: span 1;
+        margin-top: 20px;
+    }
+
+    .gridItem:nth-child(2) {
+        background-image: url("img/Boarding.png");
+        background-size: cover;
+        grid-column: span 1;
+        grid-row: span 1;
+        margin-top: 20px;
+    }
+
+    .gridItem:nth-child(3) {
+        background-image: url("img/adoption.png");
+        background-size: cover;
+        grid-column: span 1;
+        grid-row: span 2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .gridItem:nth-child(4) {
+        background-image: url("img/veterinary.png");
+        background-size: cover;
+        grid-column: span 1;
+        grid-row: span 1;
+        margin-bottom: 20px;
+    }
+
+    .gridItem:nth-child(5) {
+        background-image: url("img/training.png");
+        background-size: cover;
+        grid-column: span 1;
+        grid-row: span 1;
+        margin-bottom: 20px;
+    }
+
+    .serviceText{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50%
+    }
+
+    .fontServices{
+        font-size: 40px;
+    }
+
+    .grayBox{
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        border-radius: 5px;
+        min-width: 92%;
+        max-width: 92%;
+        align-content: center;
+        justify-content: center;
+        height: 800px;
+    }
+
+    .justify2{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .AUText{
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 500px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .grayBox2{
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        border-radius: 5px;
+        min-width: 92%;
+        max-width: 92%;
+        display: inline-flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .AUImage{
+        align-self: center;
+    }
+
+    .AUImage img{
+        width: 600px;
+        object-fit: cover;
+    }
+
+    .teamMember{
+        display: block-flex;
+        justify-content: center;
+        width: 290px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .teamImg{
+        height: 290px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .teamTwo img{
+        object-position: 0px -40px;
+    }
+
+    .teamFour img{
+        object-position: 0px 0px;
+    }
+
+    .grayBox3{
+        min-width: 87%;
+        max-width: 87%;
+        display: inline-flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .fontOTName{
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        margin-left: 15px;
+    }
+
+    .fontOTSub{
+        font-size: 16px;
+        color: gray;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .icon{
+        height: 32px;
+        margin-left: 10px;
+    }
+
+    .blog{
+        padding-top: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-items: center;
+    }
+
+    .blogPart{
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .blogPart2{
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .blogTitle{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-right: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .blogTitle2{
+        font-size: 30px;
+        font-weight: 600;
+        margin-right: 30px;
+        padding-top: 10px;
+    }
+
+    .blogParagraph{
+        text-align: justify;
+        font-size: 22px;
+        padding-top: 10px;
+        margin-right: 30px;
+    }
+
+    .blogParagraph2{
+        text-align: justify;
+        font-size: 22px;
+        padding-top: 20px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .readMore{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ButtonRM{
+        font-size: 24px;
+        display: inline-flex;
+        background-color: rgb(12, 12, 43);
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border-radius: 15px;
+        position: relative;
+        left: -50px;
+    }
+
+    .dbbackgroundSpecial{
+        background-color:  rgb(12, 12, 43);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .fontWhite{
+        color: white;
+    }
+
+    .justify4{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .contactGrid2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+    }
+
+    .cgItem{
+        border-radius: 15px;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .contactGrid3{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .GIT2{
+        display: inline-flex;
+    }
+
+    .GIT3{
+        display: block;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .GIT4{
+        display: inline-block;
+        padding-bottom: 30px;
+    }
+
+    .footBig{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid lightgrey;
+        margin: 0px 15px;
+    }
+
+    footer{
+        display: inline;
+        font-size: 16px;
+        padding-bottom: 30px;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .footer2{
+        margin-right: 15px;
+        padding-top: 15px;
+        align-items: center;
+    }
+
+    .contactGrid4{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+
+    .cgItemSpecial{
+        border-radius: 15px;
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .footerPaws{
+        margin-left: 30px;
+    }
+
+    .fontGray{
+        color: lightgray;
+    }
+
+    .grid1x2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .gridPart{
+        display: flex;
+    }
+
+    .gridPart2{
+        display: block;
+        margin: 10px 0px;
+    }
+
+    .formContainer{
+        background-color: white;
+        border-radius: 15px;
+        margin: 30px;
+        padding: 15px;
+        color: rgb(88, 87, 87);
+        justify-content: space-between;
+        font-size: 18px;
+    }
+
+    .formContainer input, textarea{
+        border: 1px solid gray;
+        border-radius: 8px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .formWidth{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .privPolice{
+        margin-top: 15px;
+        text-decoration: underline;
+    }
+
+    .formButton{
+        background-color: rgb(12, 12, 43);
+        width: 100%;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .textContact{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .textContactInner{
+        margin: 10px 0px;
+    }
+
+    .joinUs{
+        display: block;
+    }
+
+    .JU1{
+        margin: 0 25px;
+        float: left;
+    }
+
+    .JU2{
+        margin: 0 25px;
+        float: right;
+        align-items: center;
+        position: relative;
+        top: 5px;
+    }
+
+    .separator{
+        width: 100%;
+        height: 50px;
+    }
+
+    .JU2 input, button{
+        box-sizing: border-box;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .JU2 button{
+        font-weight: bold;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .JU2 input{
+        width: 600px;
+    }
+
+    .correctMargin{
+        min-width: 95%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
 }
